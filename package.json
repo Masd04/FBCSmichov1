@@ -1,7 +1,8 @@
 {
   "name": "swapper",
   "version": "0.0.0",
-  "homepage": "https://github.com/Masd04/FBCSmichov1.git",
+  "homepage": "https://masd04.github.io/FBCSmichov1/",
+  "private": false,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
