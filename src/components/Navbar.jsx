@@ -12,8 +12,8 @@ const Navbar = () => {
                                                                               //  Atribut rounded odebrat.. ??
     <nav className="w-full flex py-2 items-center xs:py-1 navbar top-0 bg-primary rounded-3xl">
 
-        <a href="/" className="hidden sm:flex md:flex lg:flex xl:flex w-1/12 xs:ml-5 ss:ml-5 sm:ml-5 md:ml-10 object-contain cursor-pointer scale-100 hover:scale-110"><img src={logoBezNapis} alt="Logo"/></a>
-        <a href="/" className="w-60 object-contain cursor-pointer sm:hidden"><img src={logoText} alt="Logo"/></a>
+        <a href="/FBCSmichov1/" className="hidden sm:flex md:flex lg:flex xl:flex w-1/12 xs:ml-5 ss:ml-5 sm:ml-5 md:ml-10 object-contain cursor-pointer scale-100 hover:scale-110"><img src={logoBezNapis} alt="Logo"/></a>
+        <a href="/FBCSmichov1/" className="w-60 object-contain cursor-pointer sm:hidden"><img src={logoText} alt="Logo"/></a>
 
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
             

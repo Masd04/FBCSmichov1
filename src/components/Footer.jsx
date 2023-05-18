@@ -9,7 +9,7 @@ const Footer = () => {
 
       {/*   Pokud chci logotext doleva -> sm:block  */}
       <div className={`hidden sm:${styles.flexCenter}`}>
-        <a href="/"><img src={logoText} alt="FBCSmichov-logo" className="w-[260px] object-contain hover:scale-110" /></a>
+        <a href="/FBCSmichov1/"><img src={logoText} alt="FBCSmichov-logo" className="w-[260px] object-contain hover:scale-110" /></a>
       </div>
 
       <div className={`flex flex-wrap w-full mb-8 xs:ml-4 ss:ml-12 sm:ml-15 ml-12`}>
