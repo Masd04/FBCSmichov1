@@ -58,7 +58,7 @@ const Navbar = () => {
               p-6 bg-black-gradient absolute top-10 right-0 mx-4 my-7 min-w[140px] rounded-xl sidebar`}>
 
             <ul className="list-none flex flex-col justify-end items-center flex-1">
-              
+                                                                                                                                                                        {/* onClick={() => setToggle(false)} */}
             <li className="text-white text-2xl font-poppins font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10 hover:text-green-500"><Link to="/" className="">Home</Link></li>
             <li className="text-white text-2xl font-poppins font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10 hover:text-yellow-400"><Link to="/klub" className="">Klub</Link></li>
             <li className="text-white text-2xl font-poppins font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10 hover:text-green-500"><Link to="/tymy" className="">Týmy</Link></li>
