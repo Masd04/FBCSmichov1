@@ -35,7 +35,9 @@ function Treninky() {
           Základní škola Weberova, Weberova 1/1090, Praha 5- Košíře, Psč: 150 00
         </p>
 
+        <div className="relative z-0">
         <div className="w-3/4 mx-auto h-64 md:h-96 rounded-3xl shadow-2xl" id="map"></div>
+        </div>
 
         <div className="w-3/4 mx-auto my-5 py-1 bg-yellow-400 rounded-3xl shadow-2xl">
         <p className={`${styles.paragraph} text-black my-12 ss:mx-20 text-center sm:text-left`}>

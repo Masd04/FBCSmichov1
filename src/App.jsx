@@ -20,7 +20,7 @@ function App() {
     <div className="w-full overflow-hidden">
 
     <div className={`bg-primary ${styles.padingX} ${styles.flexCenter}`}>
-      <div className={`text-white ${styles.boxWidth} fixed top-0`}>
+      <div className={`text-white ${styles.boxWidth} fixed top-0 z-10`}>
         <Navbar />
       </div>
     </div>
