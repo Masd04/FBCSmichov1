@@ -7,6 +7,7 @@ import Tymy from './pages/Tymy';
 import Treninky from './pages/Treninky';
 import Partneri from './pages/Partneri';
 import Kontakt from './pages/Kontakt';
+import Clanek from './pages/Clanek';
 import styles from "./style";
 import { gym } from "./static";
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/treninky" element={<Treninky />} />
         <Route path="/partneri" element={<Partneri />} />
         <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/clanek" element={<Clanek />} />
       </Routes>
         </div>
       </div>

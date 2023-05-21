@@ -4,6 +4,7 @@ import Partneri from "./Partneri";
 import Treninky from "./Treninky";
 import Tymy from "./Tymy";
 import Home from "./Home";
+import Clanek from "./Clanek";
 
 
 export default {
@@ -12,5 +13,6 @@ export default {
   Partneri,
   Treninky,
   Tymy,
-  Home
+  Home,
+  Clanek
 };
