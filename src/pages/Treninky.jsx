@@ -16,11 +16,11 @@ function Treninky() {
     }).addTo(map);
 
     // Customize the marker icon
-    const customIcon = L.icon({
-      iconUrl: '/src/static/favicon.ico', // Path to your custom marker icon
-      iconSize: [62 ,50], // Size of the icon
-      iconAnchor: [16, 32], // Anchor point of the icon (centered horizontally, bottom of the icon)
-    });
+    //const customIcon = L.icon({
+    //  iconUrl: '/src/static/favicon.ico', // Path to your custom marker icon
+    //  iconSize: [62 ,50], // Size of the icon
+    //  iconAnchor: [16, 32], // Anchor point of the icon (centered horizontally, bottom of the icon)
+    //});
 
     // Add a marker at the desired location                       /, { icon: customIcon }
     const marker = L.marker([50.07319998321817, 14.355945269261003]).addTo(map);
