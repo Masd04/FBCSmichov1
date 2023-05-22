@@ -36,6 +36,10 @@ const Navbar = () => {
     setToggle((prev) => !prev);
   }
 
+  const handleNavLinkClick = () => {
+    setToggle(false);
+  }
+
   const navLinks = [
     {path: "/", text: "Home"},
     {path: "/klub", text: "Klub"},
@@ -65,7 +69,7 @@ const Navbar = () => {
 
             <ul className="list-none flex flex-col justify-end items-center flex-1">
                 {navLinks.map((link, index) => (
-                    <li className={getNavLinkClass(link.path, index)} key={index}><Link to={link.path}>{link.text}</Link></li>
+                    <li className={getNavLinkClass(link.path, index)} key={index}><Link to={link.path} onClick={handleNavLinkClick}>{link.text}</Link></li>
                 ))}
             </ul>
           </div>
