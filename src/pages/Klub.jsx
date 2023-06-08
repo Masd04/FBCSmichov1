@@ -7,7 +7,7 @@ function Klub() {
 
       <div className={`${styles.marginX} flex-1 `}>
         
-        <div className={`${styles.nadpisY}`}>
+        <div className={`${styles.nadpisG}`}>
           Informace o klubu
         </div>
         <p className={`${styles.paragraph} text-white my-12 ss:mx-20 text-center sm:text-left`}>
@@ -23,7 +23,8 @@ function Klub() {
 
     
 
-      
+      {/* Efekt pozadí ??  */}
+		  <div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient"></div>
 
     </div>
   )

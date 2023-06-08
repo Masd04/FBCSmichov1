@@ -41,14 +41,20 @@ function Treninky() {
 
         <div className="w-3/4 mx-auto my-5 py-1 bg-yellow-400 rounded-3xl shadow-2xl">
         <p className={`${styles.paragraph} text-black my-12 ss:mx-20 text-center sm:text-left`}>
-          Středa: ...................
+          Středa: 19:00 - 20:15
           <br />
           <br />
-          Pátek: ....................
+          Pátek: 16:30 - 17:45
         </p>
         </div>
 
+        
+
       </div>
+
+      
+		  <div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient"></div>
+      
     </div>
   );
 }

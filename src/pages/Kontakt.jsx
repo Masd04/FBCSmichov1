@@ -49,6 +49,10 @@ function Kontakt() {
 
     
   </div>
+
+    {/* Efekt pozadí ??  */}
+		<div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient"></div>
+
   </div>
   )
 }

@@ -13,6 +13,7 @@ import logoBezNapis from "./FBC_Smichov _gravatar.png";
 import logoText from "./FBC_Smichov_txt.png";
 import florbalisti from "./tranava-florball.png";
 import gym from "./gym.png";
+import letak from "./Web_Letak_FBC.png";
 
 
 
@@ -32,4 +33,5 @@ export {
   logoText,
   florbalisti,
   gym,
+  letak,
 };

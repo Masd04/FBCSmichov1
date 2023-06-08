@@ -5,6 +5,7 @@ import Treninky from "./Treninky";
 import Tymy from "./Tymy";
 import Home from "./Home";
 import Clanek from "./Clanek";
+import Prihlaska from "./Prihlaska";
 
 
 export default {
@@ -14,5 +15,6 @@ export default {
   Treninky,
   Tymy,
   Home,
-  Clanek
+  Clanek,
+  Prihlaska,
 };

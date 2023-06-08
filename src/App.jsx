@@ -8,6 +8,7 @@ import Treninky from './pages/Treninky';
 import Partneri from './pages/Partneri';
 import Kontakt from './pages/Kontakt';
 import Clanek from './pages/Clanek';
+import Prihlaska from './pages/Prihlaska';
 import styles from "./style";
 import { gym } from "./static";
 
@@ -28,9 +29,10 @@ function App() {
 
 
       <div className={`${styles.flexStart} ${styles.paddingY}`}>
-        <div className={`${styles.paddingY} ${styles.boxWidth}`}>              
+        <div className={`${styles.paddingY} ${styles.boxWidth} mt-5`}>              
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/prihlaska" element={<Prihlaska />}/>
         <Route path="/klub" element={<Klub />} />
         <Route path="/tymy" element={<Tymy />} />
         <Route path="/treninky" element={<Treninky />} />

@@ -1,97 +1,47 @@
 import React from 'react'
-import { florbalisti } from '../static'
+import { florbalisti, letak } from '../static'
 import {Link} from 'react-router-dom';
 import styles from '../style';
 
 function Home() {
-  return (
-    <section id="hero" className={`flex md:flex-row flex-col`}>
+	return (
+	  <div className={`${styles.padingX} ${styles.flex}`}>
+  
+		<div className={`${styles.marginX} flex-1 `}>
+		  { /* 
+		  	<div className={`${styles.nadpisY}`}>
+			Přidej se k nám!
+		  </div>
+		  */ }
+		  
+		  
+		  <div className="my-1">
+  			<Link to="/treninky" className="block cursor-pointer">
+    			<img src={letak} alt="letak" className="sm:w-[80%] md:w-[75%] lg:w-[50%] xl:w-[75%] mx-auto scale-100 hover:scale-105" />
+  			</Link>
+		  </div>
 
-		
-	<div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
-	
-
-	<Link to="/clanek" className="block rounded-3xl max-w-sm gap-3 mx-auto sm:max-w-full hover:bg-gray-400 lg:grid lg:grid-cols-12 bg-gray-300">
-    <img src={florbalisti} alt="" className="object-cover w-full h-64 rounded-l-3xl sm:h-96 lg:col-span-7 dark:bg-gray-500 pointer-events-none" />
-    <div className="p-6 space-y-2 lg:col-span-5 pointer-events-none">
-        <h3 className="text-2xl font-semibold sm:text-4xl">Článek o florbalistech</h3>
-        <span className="text-xs dark:text-gray-400">February 19, 2021</span>
-        <p>Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id.</p>
-    </div>
-</Link>
-
-
-		
-		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-white rounded-3xl">
-				<img role="presentation" className="object-cover w-full rounded-t-3xl h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?1" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 21, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-white rounded-3xl">
-				<img role="presentation" className="object-cover w-full rounded-t-3xl h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?2" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 22, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-white rounded-3xl">
-				<img role="presentation" className="object-cover w-full rounded-t-3xl h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?3" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-white rounded-3xl hidden sm:block">
-				<img role="presentation" className="object-cover w-full rounded-t-3xl h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?4" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 24, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-white rounded-3xl hidden sm:block">
-				<img role="presentation" className="object-cover w-full rounded-t-3xl h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?5" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 25, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-white rounded-3xl hidden sm:block">
-				<img role="presentation" className="object-cover w-full rounded-t-3xl h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?6" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 26, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
+		  <div className="flex justify-center">
+		  <Link to="/prihlaska" className="px-16 py-3 my-2 text-lg font-bold hover:underline bg-green-600 rounded-3xl dark:text-gray-800 text-white hover:scale-105">
+    		PODAT PŘIHLÁŠKU
+  		  </Link>
+		</div>
 
 		</div>
 
-		<div className="flex justify-center">
-			<button type="button" className="px-6 py-3 text-sm hover:underline bg-green-500 rounded-3xl dark:text-gray-800 hover:scale-105">Načíst více...</button>
-		</div>
-
-	</div>
-
-	{/* Efekt pozadí ??  */}
-      <div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient"></div>
-
+		
+  
+	   
+  
 	  
-    </section>
-  )
-}
+  
+		{/* Efekt pozadí ??  */}
+		<div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient"></div>
 
-export default Home
+		
+  
+	  </div>
+	)
+  }
+  
+  export default Home
