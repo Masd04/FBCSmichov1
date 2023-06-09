@@ -67,7 +67,7 @@ function Treninky() {
       <div className={`${styles.marginX} flex-1`}>
         <div className={`${styles.nadpisG}`}>Tréninky</div>
         <p className={`${styles.paragraph} text-white my-12 ss:mx-20 text-center`}>
-          Základní škola Weberova, Weberova 1/1090, Praha 5- Košíře, Psč: 150 00
+          Základní škola Weberova, Weberova 1/1090, Praha 5- Košíře, PSČ: 150 00
         </p>
 
         <div className="flex rounded-3xl shadow-2xl overflow-hidden w-3/4 mx-auto">
@@ -90,7 +90,7 @@ function Treninky() {
         </div>
 
         <p className={`${styles.paragraph} text-white my-12 ss:mx-20 text-center`}>
-          Gymnázium Christiana Doplera, Zborovská 621, Praha 5- Košíře, Psč: 150 00
+          Gymnázium Christiana Doplera, Zborovská 621, Praha 5- Košíře,<br className="xs:hidden"/>PSČ: 150 00
         </p>
 
         <div className="flex rounded-3xl shadow-2xl overflow-hidden w-3/4 mx-auto">
