@@ -24,7 +24,7 @@ function Klub() {
     
 
       {/* Efekt pozadí ??  */}
-		  <div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient"></div>
+		  <div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient pointer-events-none"></div>
 
     </div>
   )

@@ -1,60 +1,120 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from '../style';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-
+import {Link} from 'react-router-dom';
 
 function Treninky() {
+  const mapRef1 = useRef(null);  // Create a ref to store the first map instance
+  const mapRef2 = useRef(null);  // Create a ref to store the second map instance
+
   useEffect(() => {
-    // Create the map instance
-    const map = L.map('map').setView([50.07319998321817, 14.355945269261003], 13);
+    if (mapRef1.current) {
+      // If map instance exists, remove it before creating a new one
+      mapRef1.current.remove();
+    }
+
+    // Create the first map instance
+    mapRef1.current = L.map('map1').setView([50.07319998321817, 14.355945269261003], 13);
 
     // Add a tile layer (e.g., OpenStreetMap)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
       maxZoom: 18,
-    }).addTo(map);
+    }).addTo(mapRef1.current);
 
-    // Customize the marker icon
-    //const customIcon = L.icon({
-    //  iconUrl: '/src/static/favicon.ico', // Path to your custom marker icon
-    //  iconSize: [62 ,50], // Size of the icon
-    //  iconAnchor: [16, 32], // Anchor point of the icon (centered horizontally, bottom of the icon)
-    //});
-
-    // Add a marker at the desired location                       /, { icon: customIcon }
-    const marker = L.marker([50.07319998321817, 14.355945269261003]).addTo(map);
+    // Add a marker at the desired location
+    const marker = L.marker([50.07319998321817, 14.355945269261003]).addTo(mapRef1.current);
     marker.bindPopup("Naše hala"); // Set the popup text for the marker
+
+    return () => {
+      // Clean up on unmount
+      if (mapRef1.current) {
+        mapRef1.current.remove();
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (mapRef2.current) {
+      // If map instance exists, remove it before creating a new one
+      mapRef2.current.remove();
+    }
+
+    // Create the second map instance
+    mapRef2.current = L.map('map2').setView([50.08050725270203, 14.406799073676527], 13);
+
+    // Add a tile layer (e.g., OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+      maxZoom: 18,
+    }).addTo(mapRef2.current);
+
+    // Add a marker at the desired location
+    const marker = L.marker([50.08050725270203, 14.406799073676527]).addTo(mapRef2.current);
+    marker.bindPopup("Naše hala"); // Set the popup text for the marker
+
+    return () => {
+      // Clean up on unmount
+      if (mapRef2.current) {
+        mapRef2.current.remove();
+      }
+    };
   }, []);
 
   return (
     <div className={`${styles.padingX} ${styles.flex}`}>
       <div className={`${styles.marginX} flex-1`}>
-        <div className={`${styles.nadpisY}`}>Tréninky</div>
+        <div className={`${styles.nadpisG}`}>Tréninky</div>
         <p className={`${styles.paragraph} text-white my-12 ss:mx-20 text-center`}>
           Základní škola Weberova, Weberova 1/1090, Praha 5- Košíře, Psč: 150 00
         </p>
 
-        <div className="relative z-0">
-        <div className="w-3/4 mx-auto h-64 md:h-96 rounded-3xl shadow-2xl" id="map"></div>
+        <div className="flex rounded-3xl shadow-2xl overflow-hidden w-3/4 mx-auto">
+          <div className="w-[65%] relative z-0">
+            <div className="w-full h-64 md:h-96" id="map1"></div>
+          </div>
+
+          <div className="w-[35%] bg-yellow-400 flex items-center justify-center">
+            <p className={`${styles.paragraph} text-black text-xs ss:text-base md:text-2xl md:my-12 mx-3 ss:mx-14 text-center`}>
+              <b>Středa:</b>
+              <br />
+              19:00 - 20:15
+              <br />
+              <br />
+              <b>Pátek:</b>
+              <br />
+              16:30 - 17:45
+            </p>
+          </div>
         </div>
 
-        <div className="w-3/4 mx-auto my-5 py-1 bg-yellow-400 rounded-3xl shadow-2xl">
-        <p className={`${styles.paragraph} text-black my-12 ss:mx-20 text-center sm:text-left`}>
-          Středa: 19:00 - 20:15
-          <br />
-          <br />
-          Pátek: 16:30 - 17:45
+        <p className={`${styles.paragraph} text-white my-12 ss:mx-20 text-center`}>
+          Gymnázium Christiana Doplera, Zborovská 621, Praha 5- Košíře, Psč: 150 00
         </p>
+
+        <div className="flex rounded-3xl shadow-2xl overflow-hidden w-3/4 mx-auto">
+          <div className="w-[65%] relative z-0">
+            <div className="w-full h-64 md:h-96" id="map2"></div>
+          </div>
+
+          <div className="w-[35%] bg-yellow-400 flex items-center justify-center">
+            <p className={`${styles.paragraph} text-black text-xs ss:text-base md:text-2xl md:my-12 mx-3 ss:mx-14 text-center`}>
+              <b>Pondělí:</b>
+              <br />
+              17:00 - 18:00
+            </p>
+          </div>
         </div>
 
-        
+        <div className="flex justify-center mt-6">
+          <Link to="/prihlaska" className="px-16 py-3 my-2 text-lg font-bold hover:underline bg-green-600 rounded-3xl dark:text-gray-800 text-white hover:scale-105">
+            PODAT PŘIHLÁŠKU
+          </Link>
+       </div>
 
+        <div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient pointer-events-none"></div>
       </div>
-
-      
-		  <div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient"></div>
-      
     </div>
   );
 }

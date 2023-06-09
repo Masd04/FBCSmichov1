@@ -1,5 +1,5 @@
-import React from 'react';
-import {Navbar, Footer} from './components';
+import React, { useRef } from 'react';
+import {Navbar, Footer, ScrollToTop} from './components';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Klub from './pages/Klub';
@@ -13,11 +13,14 @@ import styles from "./style";
 import { gym } from "./static";
 
 function App() {
+  const scrollRef = useRef();
+
   return (
     <Router basename={"/FBCSmichov1"}>
+      <ScrollToTop scrollRef={scrollRef} />
     {/* <div className="bg-cover bg-center fixed top-0 left-0 right-0 bottom-0" style={{ backgroundImage: `url(${gym})` }}> */}
     <div className="bg-primary fixed top-0 left-0 right-0 bottom-0">
-    <div className="absolute top-0 left-0 right-0 bottom-0 overflow-y-scroll">
+    <div ref={scrollRef} className="absolute top-0 left-0 right-0 bottom-0 overflow-y-scroll">
     
     <div className="w-full overflow-hidden">
 

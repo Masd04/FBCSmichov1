@@ -7,7 +7,7 @@ function Tymy() {
 
     <div className={`${styles.marginX} flex-1 `}>
       
-      <div className={`${styles.nadpisG}`}>
+      <div className={`${styles.nadpisY}`}>
         Týmy
       </div>
       <p className={`${styles.paragraph} text-white my-12 ss:mx-20 text-center sm:text-left`}>
@@ -21,7 +21,7 @@ function Tymy() {
   
 
       {/* Efekt pozadí ??  */}
-		<div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient"></div>
+		<div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient pointer-events-none"></div>
 
   </div>
   )

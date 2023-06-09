@@ -7,7 +7,7 @@ function Kontakt() {
     <div className={`${styles.padingX} ${styles.flex}`}>
     <div className={`${styles.marginX} flex-1 `}>
 
-    <div className={`${styles.nadpisY}`}>
+    <div className={`${styles.nadpisG}`}>
         Kontakt
       </div>
 
@@ -28,7 +28,7 @@ function Kontakt() {
           <p className={`${styles.paragraph} text-white text-center font-medium`}>
            Aneta ......<br />
             +420 000 000 000<br />
-            aneta@fbcsmichov.cz<br />
+            vybor@fbcsmichov.cz<br />
           </p>
         </div>
         <div className="w-full xs:w-1/2 ss:w-1/2 sm:w-1/3 lg:w-1/3 flex flex-col justify-center p-2">
@@ -37,7 +37,7 @@ function Kontakt() {
           <p className={`${styles.paragraph} text-white text-center font-medium`}>
             Viktor Martínek <br />
             +420 602 724 543 <br />
-            vi.ma2525@gmail.com <br />
+            martinek@fbcsmichov.cz <br />
           </p>
         </div>
        
@@ -51,7 +51,7 @@ function Kontakt() {
   </div>
 
     {/* Efekt pozadí ??  */}
-		<div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient"></div>
+		<div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient pointer-events-none"></div>
 
   </div>
   )
