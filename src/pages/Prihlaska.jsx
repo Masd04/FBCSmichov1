@@ -42,7 +42,7 @@ function Prihlaska() {
 
 
         <div className="mt-7 flex items-top justify-center">
-        <form ref={form} onSubmit={sendEmail} className="bg-yellow-400 shadow-md rounded-2xl px-8 pt-6 pb-8 mb-4 w-[95%] sm:w-3/4">
+        <form ref={form} onSubmit={sendEmail} className="bg-fbcyellow shadow-md rounded-2xl px-8 pt-6 pb-8 mb-4 w-[95%] sm:w-3/4">
 
           <div className="mb-4 grid sm:grid-cols-2 gap-4">
             <div>
@@ -119,10 +119,10 @@ function Prihlaska() {
 
     </div>
 
-    {message && <div className={`text-center text-2xl ${isError ? 'text-red-500' : 'text-green-500'} text-outline tracking-widest mt-[-1em] mb-3`}><b>{message}</b></div>}
+    {message && <div className={`text-center text-2xl ${isError ? 'text-red-500' : 'text-fbcgreen'} text-outline tracking-widest mt-[-1em] mb-3`}><b>{message}</b></div>}
 
       <div className="flex items-center justify-center">
-      <button className="bg-green-500 hover:bg-green-700 black font-bold py-3 px-10 rounded focus:outline-none focus:shadow-outline" type="submit">
+      <button className="bg-fbcgreen hover:bg-green-700 black font-bold py-3 px-10 rounded focus:outline-none focus:shadow-outline" type="submit">
         Odeslat
       </button>
       </div>

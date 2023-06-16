@@ -1,6 +1,6 @@
 import React from "react";
 import {Link, useLocation} from 'react-router-dom';
-import { close, logo, menu, logoNapis, logoBezNapis, logoText} from "../static";
+import { close, logo, menu, logoNapis, logoBezNapis, logoText, micek1, micek2 } from "../static";
 import { useState, useEffect, useRef } from 'react';
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const getNavLinkClass = (path, index) => {
     const baseClass = "text-white text-2xl font-poppins font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10";
-    const colorClass = index % 2 === 0 ? "hover:text-green-500" : "hover:text-yellow-400";
+    const colorClass = index % 2 === 0 ? "hover:text-fbcgreen" : "hover:text-fbcyellow";
     const activeClass = pathname === path ? colorClass.replace('hover:', '') : "";
     return `${baseClass} ${colorClass} ${activeClass}`;
   }
@@ -51,9 +51,53 @@ const Navbar = () => {
   ];
 
   return (
-    <nav ref={navRef} className="w-full flex py-2 items-center xs:py-1 navbar top-0 bg-primary rounded-3xl select-none">
-        <a href="/FBCSmichov1/" className="hidden sm:flex md:flex lg:flex xl:flex w-[10%] xs:ml-5 ss:ml-5 sm:ml-5 md:ml-10 object-contain cursor-pointer scale-100 hover:scale-110"><img src={logoBezNapis} alt="Logo"/></a>
+    <>
+    <div className="hidden sm:block absolute top-0 left-0 w-full h-16 bg-fbcyellow">
+    <a href="https://example.com" className="flex items-start justify-center h-full">
+      <div className="bg-black px-6 py-2 mt-[1px] rounded-full flex items-center scale-100 hover:scale-105 shadow-xl">
+        <img src="https://lista.ceskyflorbal.cz/img/svg-src/cesky-florbal-logo.svg" alt="Český Florbal" className="h-8 mx-2 bg-white rounded-full" />
+        <span className="text-white font-bold text-xl">Český Florbal</span>
+        </div>
+    </a>
+
+
+    <div className="absolute top-2 left-5 flex items-center justify-center">
+          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 4" className="h-8 mx-1"/>
+          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 4" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 4" className="h-8 mx-1" />
+        </div>
+    <div className="absolute top-2 right-5 flex items-center justify-center">
+          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 4" className="h-8 mx-1"/>
+          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 4" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 4" className="h-8 mx-1" />
+        </div>
+
+  </div>
+
+    <nav ref={navRef} className="sm:relative flex w-full py-3 sm:py-7 navbar top-0 sm:mt-[3.1rem] bg-primary rounded-3xl select-none">
+      <div className="hidden sm:flex md:flex lg:flex xl:flex w-[12%] xs:ml-5 ss:ml-5 sm:ml-5 md:ml-10 mt-2 object-contain cursor-pointer scale-100 hover:scale-110 absolute top-[-50%] left-1 transform[-translate-x-1/2]">
+        <img src={logoBezNapis} alt="Logo" className="h-[200%]" />
+      </div>
         <a href="/FBCSmichov1/" className="w-60 object-contain cursor-pointer sm:hidden"><img src={logoText} alt="Logo"/></a>
+
 
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
             {navLinks.map((link, index) => (
@@ -76,6 +120,7 @@ const Navbar = () => {
           </div>
         </div>
     </nav>
+    </>
   )
 }
 

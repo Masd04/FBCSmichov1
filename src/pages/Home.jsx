@@ -21,7 +21,7 @@ function Home() {
     </div>
 
     <div className="flex justify-center mt-2">
-    <Link to="/prihlaska" className="px-16 py-3 my-2 text-lg font-bold hover:underline bg-green-600 rounded-3xl dark:text-gray-800 text-white hover:scale-105">
+    <Link to="/prihlaska" className="px-16 py-3 my-2 text-lg font-bold hover:underline bg-fbcgreen rounded-3xl dark:text-gray-800 text-white hover:scale-105">
       PODAT PŘIHLÁŠKU
       </Link>
   </div>

@@ -9,6 +9,8 @@ module.exports = {
         secondary: "#00f6ff",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
+        fbcgreen: "rgba(67,170,53,255)",
+        fbcyellow: "rgba(255,203,0,255)",
         },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

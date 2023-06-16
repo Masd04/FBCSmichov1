@@ -75,7 +75,7 @@ function Treninky() {
             <div className="w-full h-64 md:h-96" id="map1"></div>
           </div>
 
-          <div className="w-[35%] bg-yellow-400 flex items-center justify-center">
+          <div className="w-[35%] bg-fbcyellow flex items-center justify-center">
             <p className={`${styles.paragraph} text-black text-xs ss:text-base md:text-2xl md:my-12 mx-3 ss:mx-14 text-center`}>
               <b>Středa:</b>
               <br />
@@ -98,7 +98,7 @@ function Treninky() {
             <div className="w-full h-64 md:h-96" id="map2"></div>
           </div>
 
-          <div className="w-[35%] bg-yellow-400 flex items-center justify-center">
+          <div className="w-[35%] bg-fbcyellow flex items-center justify-center">
             <p className={`${styles.paragraph} text-black text-xs ss:text-base md:text-2xl md:my-12 mx-3 ss:mx-14 text-center`}>
               <b>Pondělí:</b>
               <br />
