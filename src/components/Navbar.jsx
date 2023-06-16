@@ -44,9 +44,9 @@ const Navbar = () => {
     {path: "/", text: "Home"},
     {path: "/prihlaska", text: "Přihláška"},
     {path: "/klub", text: "Klub"},
-    {path: "/tymy", text: "Týmy"},
+    //{path: "/tymy", text: "Týmy"},
     {path: "/treninky", text: "Tréninky"},
-    {path: "/partneri", text: "Partneři"},
+    //{path: "/partneri", text: "Partneři"},
     {path: "/kontakt", text: "Kontakt"},
   ];
 

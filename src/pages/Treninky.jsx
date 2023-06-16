@@ -65,7 +65,7 @@ function Treninky() {
   return (
     <div className={`${styles.padingX} ${styles.flex}`}>
       <div className={`${styles.marginX} flex-1`}>
-        <div className={`${styles.nadpisG}`}>Tréninky</div>
+        <div className={`${styles.nadpisY}`}>Tréninky</div>
         <p className={`${styles.paragraph} text-white my-12 ss:mx-20 text-center`}>
           Základní škola Weberova, Weberova 1/1090, Praha 5- Košíře, PSČ: 150 00
         </p>
