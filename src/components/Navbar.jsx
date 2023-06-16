@@ -54,7 +54,7 @@ const Navbar = () => {
     <>
     <div className="hidden sm:block absolute top-0 left-0 w-full h-16 bg-fbcyellow">
     <a href="https://example.com" className="flex items-start justify-center h-full">
-      <div className="bg-black px-6 py-2 mt-[1px] rounded-full flex items-center scale-100 hover:scale-105 shadow-xl">
+      <div className="bg-black px-6 py-2 mt-[1px] rounded-full flex items-center scale-100 hover:scale-105 shadow-xl z-10">
         <img src="https://lista.ceskyflorbal.cz/img/svg-src/cesky-florbal-logo.svg" alt="Český Florbal" className="h-8 mx-2 bg-white rounded-full" />
         <span className="text-white font-bold text-xl">Český Florbal</span>
         </div>
