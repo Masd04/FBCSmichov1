@@ -22,6 +22,10 @@ import micek2 from "./floorball.png";
 import bazen from "./bazen.png";
 import skola from "./skola.png";
 import v_gym from "./v_gym.png";
+import dvahraci from "./dvahraci.png";
+import florbalka from "./florbalka.png";
+import micekk from "./micekk1.png";
+import nohy from "./nohy.png";
 import venk_hriste from "./venk_hriste.png";
 
 
@@ -51,4 +55,8 @@ export {
   skola,
   v_gym,
   venk_hriste,
+  dvahraci,
+  florbalka,
+  nohy,
+  micekk,
 };

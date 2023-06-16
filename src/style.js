@@ -8,6 +8,8 @@ const styles = {
     heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full text-center select-none",
     paragraph: "font-poppins font-normal text-[18px] leading-[30.8px]",
     paragraphTreninky: "font-poppins font-normal text-[18px] sm:text-[25px] leading-[30.8px]",
+    spanBgTxt: "bg-black bg-opacity-50 rounded-lg px-2 py-1",
+    paragraphKlub: "font-poppins font-medium text-[20px] leading-[30.8px]",
   
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
@@ -21,7 +23,9 @@ const styles = {
     marginY: "sm:my-16 my-6",
 
     footerH1: "text-2xl mb-2 select-none",
-    footerIcon: "w-[20%] p-3 mt-1 ml-20 scale-100 hover:scale-125 lg:p-1 lg:mt-1 md:p-6 md:mt-0 sm:p-4 sm:mt-0 ss:p-1 ss:mt-3 xs:p-0 xs:mt-6"
+    footerIcon: "w-[20%] p-3 mt-1 ml-20 scale-100 hover:scale-125 lg:p-1 lg:mt-1 md:p-6 md:mt-0 sm:p-4 sm:mt-0 ss:p-1 ss:mt-3 xs:p-0 xs:mt-6",
+
+    colorCirc: "inline-block w-4 h-4 rounded-full mx-1",
   };
   
   export const layout = {

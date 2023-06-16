@@ -10,7 +10,7 @@ import Kontakt from './pages/Kontakt';
 import Clanek from './pages/Clanek';
 import Prihlaska from './pages/Prihlaska';
 import styles from "./style";
-import { gym, possiblebg, whflorbalisti, greyflorbalisti } from "./static";
+import { gym, possiblebg, whflorbalisti, greyflorbalisti, dvahraci,florbalka,nohy,micekk, } from "./static";
 
 function App() {
   const scrollRef = useRef();
@@ -19,7 +19,7 @@ function App() {
     <Router basename={"/FBCSmichov1"}>
       <ScrollToTop scrollRef={scrollRef} />
     {/* <div className="bg-primary fixed top-0 left-0 right-0 bottom-0"> */}
-    <div className="bg-cover bg-center fixed top-0 left-0 right-0 bottom-0" style={{ backgroundImage: `url(${gym})` }}>
+    <div className="bg-cover bg-center fixed top-0 left-0 right-0 bottom-0" style={{ backgroundImage: `url(${florbalka})` }}>
     
     <div ref={scrollRef} className="absolute top-0 left-0 right-0 bottom-0 overflow-y-scroll">
     
