@@ -93,10 +93,12 @@ const Navbar = () => {
   </div>
 
     <nav ref={navRef} className="sm:relative flex w-full py-3 sm:py-7 navbar top-0 sm:mt-[3.1rem] bg-primary rounded-3xl select-none">
-      <div className="hidden sm:flex md:flex lg:flex xl:flex w-[12%] xs:ml-5 ss:ml-5 sm:ml-5 md:ml-10 mt-2 object-contain cursor-pointer scale-100 hover:scale-110 absolute top-[-50%] left-1 transform[-translate-x-1/2]">
+
+      <a href="/FBCSmichov1/"><div className="hidden sm:flex md:flex lg:flex xl:flex w-[12%] xs:ml-5 ss:ml-5 sm:ml-5 md:ml-10 mt-2 object-contain cursor-pointer scale-100 hover:scale-110 absolute top-[-50%] left-1 transform[-translate-x-1/2]">
         <img src={logoBezNapis} alt="Logo" className="h-[200%]" />
-      </div>
-        <a href="/FBCSmichov1/" className="w-60 object-contain cursor-pointer sm:hidden"><img src={logoText} alt="Logo"/></a>
+      </div></a>
+
+      <a href="/FBCSmichov1/" className="w-60 object-contain cursor-pointer sm:hidden"><img src={logoText} alt="Logo"/></a>
 
 
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
