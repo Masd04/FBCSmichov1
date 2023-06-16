@@ -1,5 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import styles from '../style';
+import iconMarker from "leaflet/dist/images/marker-icon.png";
+import iconRetina from "leaflet/dist/images/marker-icon-2x.png";
+import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import {Link} from 'react-router-dom';
@@ -8,6 +11,12 @@ import { bazen, skola, v_gym, venk_hriste } from "../static";
 function Treninky() {
   const mapRef1 = useRef(null);  // Create a ref to store the first map instance
   const mapRef2 = useRef(null);  // Create a ref to store the second map instance
+
+  L.Icon.Default.mergeOptions({
+    iconRetinaUrl: iconRetina,
+    iconUrl: iconMarker,
+    shadowUrl: iconShadow,
+  });
 
   useEffect(() => {
     if (mapRef1.current) {
