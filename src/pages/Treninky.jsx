@@ -3,6 +3,7 @@ import styles from '../style';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import {Link} from 'react-router-dom';
+import { bazen, skola, v_gym, venk_hriste } from "../static";
 
 function Treninky() {
   const mapRef1 = useRef(null);  // Create a ref to store the first map instance
@@ -66,9 +67,18 @@ function Treninky() {
     <div className={`${styles.padingX} ${styles.flex}`}>
       <div className={`${styles.marginX} flex-1`}>
         <div className={`${styles.nadpisY}`}>Tréninky</div>
-        <p className={`${styles.paragraph} text-white my-12 ss:mx-20 text-center`}>
+        <p className={`${styles.paragraphTreninky} text-white my-10 ss:mx-20 text-center`}>
           Základní škola Weberova, Weberova 1/1090, Praha 5- Košíře, PSČ: 150 00
         </p>
+
+        <div className="flex justify-center mb-5">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+    <img src={skola} alt="Image 1" className="sm:w-auto sm:h-64 object-cover border-2" />
+    <img src={bazen} alt="Image 2" className="sm:w-auto sm:h-64 object-cover border-2" />
+    <img src={v_gym} alt="Image 3" className="sm:w-auto sm:h-64 object-cover border-2" />
+    <img src={venk_hriste} alt="Image 4" className="sm:w-auto sm:h-64 object-cover border-2" />
+  </div>
+</div>
 
         <div className="flex rounded-3xl shadow-2xl overflow-hidden w-3/4 mx-auto">
           <div className="w-[65%] relative z-0">
@@ -89,7 +99,7 @@ function Treninky() {
           </div>
         </div>
 
-        <p className={`${styles.paragraph} text-white my-12 ss:mx-20 text-center`}>
+        <p className={`${styles.paragraphTreninky} text-white mb-12 mt-24 ss:mx-20 text-center`}>
           Gymnázium Christiana Doplera, Zborovská 621, Praha 5- Košíře,<br className="xs:hidden"/>PSČ: 150 00
         </p>
 
@@ -108,7 +118,7 @@ function Treninky() {
         </div>
 
         <div className="flex justify-center mt-6">
-          <Link to="/prihlaska" className="px-16 py-3 my-2 text-lg font-bold hover:underline bg-green-600 rounded-3xl dark:text-gray-800 text-white hover:scale-105">
+          <Link to="/prihlaska" className="px-16 py-3 my-2 text-lg font-bold hover:underline bg-fbcgreen rounded-3xl dark:text-gray-800 text-white hover:scale-105">
             PODAT PŘIHLÁŠKU
           </Link>
        </div>

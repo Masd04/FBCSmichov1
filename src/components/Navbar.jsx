@@ -53,27 +53,27 @@ const Navbar = () => {
   return (
     <>
     <div className="hidden sm:block absolute top-0 left-0 w-full h-16 bg-fbcyellow">
-    <a href="https://example.com" className="flex items-start justify-center h-full">
-      <div className="bg-black px-6 py-2 mt-[1px] rounded-full flex items-center scale-100 hover:scale-105 shadow-xl z-10">
+    <a href="https://www.ceskyflorbal.cz/" target="_blank" className="flex items-start justify-center h-full">
+      <div className="bg-black px-6 py-2 mt-[1px] rounded-xl flex items-center scale-100 hover:scale-105 shadow-xl z-10">
         <img src="https://lista.ceskyflorbal.cz/img/svg-src/cesky-florbal-logo.svg" alt="Český Florbal" className="h-8 mx-2 bg-white rounded-full" />
-        <span className="text-white font-bold text-xl">Český Florbal</span>
+        <span className="text-white font-serif font-bold text-xl">Český Florbal</span>
         </div>
     </a>
 
 
     <div className="absolute top-2 left-5 flex items-center justify-center">
-          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
-          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
-          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
-          <img src={micek2} alt="Icon 4" className="h-8 mx-1"/>
-          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
-          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
-          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
-          <img src={micek2} alt="Icon 4" className="h-8 mx-1" />
-          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
-          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
-          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
-          <img src={micek2} alt="Icon 4" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 4" className="h-8 mx-1"/>
+          <img src={micek2} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 4" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 4" className="h-8 mx-1" />
         </div>
     <div className="absolute top-2 right-5 flex items-center justify-center">
           <img src={micek1} alt="Icon 1" className="h-8 mx-1" />

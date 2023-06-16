@@ -19,7 +19,10 @@ import greyflorbalisti from "./grey-florbalisti.png";
 import whflorbalisti from "./wh-florbalisti.png";
 import micek1 from "./floorball (1).png";
 import micek2 from "./floorball.png";
-
+import bazen from "./bazen.png";
+import skola from "./skola.png";
+import v_gym from "./v_gym.png";
+import venk_hriste from "./venk_hriste.png";
 
 
 export {
@@ -44,4 +47,8 @@ export {
   whflorbalisti,
   micek1,
   micek2,
+  bazen,
+  skola,
+  v_gym,
+  venk_hriste,
 };
