@@ -226,3 +226,36 @@ KLUB 2  -------->
 		  <div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient pointer-events-none"></div>
 
     </div>
+
+
+
+    MICKY ---------->
+    {/*   
+    <div className="absolute top-2 left-5 flex items-center justify-center">
+          <img src={micek2} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 4" className="h-8 mx-1"/>
+          <img src={micek2} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 4" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 4" className="h-8 mx-1" />
+        </div>
+    <div className="absolute top-2 right-5 flex items-center justify-center">
+          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 4" className="h-8 mx-1"/>
+          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 4" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 1" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 2" className="h-8 mx-1" />
+          <img src={micek1} alt="Icon 3" className="h-8 mx-1" />
+          <img src={micek2} alt="Icon 4" className="h-8 mx-1" />
+        </div>    */}

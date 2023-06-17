@@ -6,6 +6,7 @@ const styles = {
     divNadpisAnim: "font-poppins font-bold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center bg-gradient-to-r bg-clip-text text-transparent from-yellow-500 via-black to-fbcgreen animate-text",
   
     heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full text-center select-none",
+    
     paragraph: "font-poppins font-normal text-[18px] leading-[30.8px]",
     paragraphTreninky: "font-poppins font-normal text-[18px] sm:text-[25px] leading-[30.8px]",
     spanBgTxt: "bg-black bg-opacity-50 rounded-lg px-2 py-1",
