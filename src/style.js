@@ -3,6 +3,7 @@ const styles = {
 
     nadpisY: "font-poppins font-bold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center text-fbcyellow select-none",
     nadpisG: "font-poppins font-bold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center text-fbcgreen select-none",
+    nadpisHome: "font-poppins font-bold text-[1.5rem] xs:text-[2.2rem] sm:text-[40px] xs:leading-[76.8px] sm:leading-[66.8px] w-full text-center text-fbcgreen select-none",
     divNadpisAnim: "font-poppins font-bold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center bg-gradient-to-r bg-clip-text text-transparent from-yellow-500 via-black to-fbcgreen animate-text",
   
     heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full text-center select-none",
@@ -10,7 +11,9 @@ const styles = {
     paragraph: "font-poppins font-normal text-[18px] leading-[30.8px]",
     paragraphTreninky: "font-poppins font-normal text-[18px] sm:text-[25px] leading-[30.8px]",
     spanBgTxt: "bg-black bg-opacity-50 rounded-lg px-2 py-1",
+    spanBgTxt1: "bg-gray-400 bg-opacity-100 rounded-lg px-2 py-1 border-2 border-black",
     paragraphKlub: "font-poppins font-medium text-[20px] leading-[30.8px]",
+    paragraphHome: "font-base text-[20px] leading-[30.8px]",
   
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
