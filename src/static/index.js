@@ -28,7 +28,7 @@ import florbalka from "./florbalka.png";
 import micekk from "./micekk1.png";
 import nohy from "./nohy.png";
 import venk_hriste from "./venk_hriste.png";
-import doppler from "./doppler1.jpg"
+import doppler from "./doppler2.jpg"
 
 
 export {

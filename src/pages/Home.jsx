@@ -1,5 +1,5 @@
 import React from 'react';
-import { florbalisti, letak, micek3, skola, v_gym } from '../static';
+import { florbalisti, letak, micek3, skola, v_gym, doppler } from '../static';
 import { Link } from 'react-router-dom';
 import styles from '../style';
 
@@ -21,14 +21,17 @@ function Home() {
 
         <div className="px-1 sm:px-10 text-center">
         <p className={`${styles.paragraphHome} text-white my-5`}>
-        Florbalový klub FBC Smíchov je zaměřený především na děti a mládež. Jdeme cestou sportovního prožitku, dobré nálady na tréninku i zápasu, kamarádské atmosféry a vytváříme celoroční sportovní program. 
+        Florbalový klub FBC Smíchov je zaměřený především na děti a mládež. 
+        Jdeme cestou sportovního prožitku, dobré nálady na tréninku i zápasu, 
+        kamarádské atmosféry a vytváříme celoroční sportovní program.
+        Pro informace o našich trénincích a klubových příspěvcích klikněte <Link to="/treninky"><span className="text-fbcgreen hover:underline"><b>ZDE</b></span></Link> nebo na banner vpravo.
         </p>
         </div>
 
         <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 my-9">
-            <img src={skola} alt="Image 1" className="sm:w-auto sm:40 object-cover border-4 border-white" />
-            <img src={v_gym} alt="Image 2" className="sm:w-auto sm:40 object-cover border-4 border-white" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 my-1">
+            <img src={skola} alt="Image 1" className="sm:w-auto object-cover border-4 border-white justify-self-center" />
+            <img src={doppler} alt="Image 2" className="sm:w-[86%] object-cover border-4 border-white justify-self-center" />
         </div>
         </div>
 
