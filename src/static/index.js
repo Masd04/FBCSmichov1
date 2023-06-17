@@ -29,6 +29,8 @@ import micekk from "./micekk1.png";
 import nohy from "./nohy.png";
 import venk_hriste from "./venk_hriste.png";
 import doppler from "./doppler2.jpg"
+import deti1 from "./deti1.jpg"
+import deti3 from "./deti2.jpg"
 
 
 export {
@@ -63,4 +65,6 @@ export {
   micekk,
   micek3,
   doppler,
+  deti1,
+  deti3,
 };

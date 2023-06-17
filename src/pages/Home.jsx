@@ -1,5 +1,5 @@
 import React from 'react';
-import { florbalisti, letak, micek3, skola, v_gym, doppler } from '../static';
+import { florbalisti, letak, micek3, skola, v_gym, doppler, deti1, deti3 } from '../static';
 import { Link } from 'react-router-dom';
 import styles from '../style';
 
@@ -29,9 +29,9 @@ function Home() {
         </div>
 
         <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 my-1">
-            <img src={skola} alt="Image 1" className="sm:w-auto object-cover border-4 border-white justify-self-center" />
-            <img src={doppler} alt="Image 2" className="sm:w-[86%] object-cover border-4 border-white justify-self-center" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-0 my-1">
+            <img src={deti3} alt="Image 1" className="sm:w-auto object-cover border-4 border-white justify-self-center" />
+            <img src={deti1} alt="Image 2" className="sm:w-[77%] object-cover border-4 border-white justify-self-center" />
         </div>
         </div>
 
