@@ -9,8 +9,8 @@ function ImageModal({ isOpen, onRequestClose, selectedImage }) {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Selected Image"
-      className="modal"
-      overlayClassName="overlay"
+      className="custom-modal"
+      overlayClassName="custom-overlay"
     >
       <div className="flex justify-end absolute top-0 right-0 mt-2 mr-2">
         <button className="text-white text-xl" onClick={onRequestClose}>
