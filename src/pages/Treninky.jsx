@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from '../style';
 import iconMarker from "leaflet/dist/images/marker-icon.png";
 import iconRetina from "leaflet/dist/images/marker-icon-2x.png";
@@ -7,8 +7,22 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import {Link} from 'react-router-dom';
 import { bazen, skola, v_gym, venk_hriste } from "../static";
+import Modal from 'react-modal';
+import '../static/css/modal.css';
 
 function Treninky() {
+  // Modal Popup
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
+//  MAPA
   const mapRef1 = useRef(null);  // Create a ref to store the first map instance
   const mapRef2 = useRef(null);  // Create a ref to store the second map instance
 
@@ -84,10 +98,10 @@ function Treninky() {
 
         <div className="flex justify-center mb-5">
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-    <img src={skola} alt="Image 1" className="sm:w-auto sm:h-64 object-cover border-2" />
-    <img src={bazen} alt="Image 2" className="sm:w-auto sm:h-64 object-cover border-2" />
-    <img src={v_gym} alt="Image 3" className="sm:w-auto sm:h-64 object-cover border-2" />
-    <img src={venk_hriste} alt="Image 4" className="sm:w-auto sm:h-64 object-cover border-2" />
+    <img src={skola} alt="Image 1" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(skola)} />
+    <img src={bazen} alt="Image 2" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(bazen)} />
+    <img src={v_gym} alt="Image 3" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(v_gym)} />
+    <img src={venk_hriste} alt="Image 4" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(venk_hriste)} />
   </div>
 </div>
 
@@ -147,6 +161,22 @@ function Treninky() {
 
         <div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient pointer-events-none"></div>
       </div>
+
+      <Modal
+        isOpen={selectedImage !== null}
+        onRequestClose={closeModal}
+        contentLabel="Selected Image"
+        className="custom-modal" // Add custom modal class
+        overlayClassName="custom-overlay" // Add custom overlay class
+      >
+        <div className="flex justify-end absolute top-0 right-0 mt-2 mr-2">
+          <button className="text-white text-xl" onClick={closeModal}>
+            &times;
+          </button>
+        </div>
+        {selectedImage && <img src={selectedImage} alt="Selected" className="max-w-full max-h-full" />}
+      </Modal>
+
     </div>
   );
 }

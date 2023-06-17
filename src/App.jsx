@@ -12,6 +12,7 @@ import Prihlaska from './pages/Prihlaska';
 import styles from "./style";
 import { gym, possiblebg, whflorbalisti, greyflorbalisti, dvahraci,florbalka,nohy,micekk, } from "./static";
 
+
 function App() {
   const scrollRef = useRef();
 
