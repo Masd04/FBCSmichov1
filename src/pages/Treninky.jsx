@@ -141,7 +141,7 @@ function Treninky() {
           <h2 className={`${styles.heading3} pt-3 pb-3`}>Členství v klubu</h2>
           <p className={`${styles.paragraph} text-white text-center`}>Nábor probíhá pruběžně celý rok.</p>
           <p className={`${styles.paragraph} text-white text-center mt-3`}><b>Příspěvky:</b></p>
-          <p className={`${styles.paragraph} text-white text-center pb-3`}>900.-Kč měsíčně, 5 měsíců dopředu</p>
+          <p className={`${styles.paragraph} text-white text-center pb-3`}>900.-Kč měsíčně,<br className="xs:hidden"/> 5 měsíců dopředu</p>
           </div>
           </div>
 
