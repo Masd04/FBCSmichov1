@@ -13,7 +13,7 @@ import logoBezNapis from "./FBC_Smichov _gravatar.png";
 import logoText from "./FBC_Smichov_txt.png";
 import florbalisti from "./tranava-florball.png";
 import gym from "./gym1.png";
-import letak from "./Web_Letak_FBC.png";
+import letak from "./Web_Letak_FBC.jpg";
 import possiblebg from "./possiblebg.jpg";
 import greyflorbalisti from "./grey-florbalisti.png";
 import whflorbalisti from "./wh-florbalisti.png";
