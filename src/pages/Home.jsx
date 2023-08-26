@@ -20,6 +20,27 @@ function Home() {
 
   return (
     <div className={`${styles.marginX} sm:pt-5 flex-1 flex flex-wrap`}>
+
+
+      <div className="w-full h-32 mb-2 rounded-lg flex items-center bg-cover bg-center" style={{ backgroundImage: 'url(https://shop.wannadosports.com/wp-content/uploads/2018/06/meerfunBg.png)' }}>
+
+        <div className="w-2/3 p-4 text-center font-nunito text-4xl pl-0">
+          <p className="text-white">
+            S náborem nám pomáhá WANNADO.
+          </p>
+          <p className="text-white">
+            Stánek můžete navštívit na jejich festivalu.
+          </p>
+        </div>
+        <div className="w-1/3 flex justify-start">
+          <a href="https://www.wannadosports.com/wannado/" target="_blank">
+          <img src="https://www.wannadosports.com/wp-content/uploads/2018/06/wannado-white-cropped.png" alt="Wannado" className="h-16 cursor-pointer scale-100 hover:scale-105" />
+          </a>
+        </div>
+  
+      </div>
+
+
       <div className="w-full sm:w-1/2">
         <div className={`${styles.spanBgTxt} my-1 sm:mx-5 sm:pb-0`}>
           <div className={`${styles.nadpisHome} my-1`}>
