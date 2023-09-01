@@ -28,6 +28,8 @@ function Klub() {
         </div>
 
         <div className="text-center">
+        <h2 className={`${styles.heading3} pt-7`}>Členství v klubu</h2>
+          <p className={`${styles.paragraph} text-white text-center`}>Nábor probíhá pruběžně celý rok.</p>
         <p className={`${styles.paragraphKlub} text-white`}>
             <br />
             Příspěvky: <br />
