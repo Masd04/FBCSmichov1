@@ -19,11 +19,22 @@ function Klub() {
       
       <div className="text-center">
         <p className={`${styles.paragraphKlub} text-white`}>
-            Naše motto je: ............................................................<br /><br />
-            Klubové barvy: 
+            <br />
+            Klubové barvy: <br />
           <span className="text-fbcgreen"> Zelená<div className={`${styles.colorCirc} bg-fbcgreen`}></div></span>,
           <span className="text-fbcyellow"> žlutá<div className={`${styles.colorCirc} bg-fbcyellow`}></div> </span>
           a <span>bílá<div className={`${styles.colorCirc} bg-white`}></div></span>
+        </p>
+        </div>
+
+        <div className="text-center">
+        <p className={`${styles.paragraphKlub} text-white`}>
+            <br />
+            Příspěvky: <br />
+          <span className={`${styles.paragraph} text-white`}>250 Kč / měsíc</span><br />
+          <span className={`${styles.paragraphPrisp}`}>( splatné dopředu )</span><br /><br />
+          <span className={`${styles.paragraph} text-white`}>říjen - leden : 1000 Kč</span><br />
+          <span className={`${styles.paragraph} text-white`}>únor - červen : 1250 Kč</span>
         </p>
         </div>
 

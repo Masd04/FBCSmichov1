@@ -14,6 +14,7 @@ const styles = {
     spanBgTxt: "bg-black bg-opacity-50 rounded-lg px-2 py-1",
     spanBgTxt1: "bg-gray-400 bg-opacity-100 rounded-lg px-2 py-1 border-2 border-black",
     paragraphKlub: "font-poppins font-medium text-[20px] leading-[30.8px]",
+    paragraphPrisp: "font-poppins font-normal text-[15px] leading-[30px] text-gray-300",
     paragraphHome: "font-base text-[20px] leading-[30.8px]",
   
     flexCenter: "flex justify-center items-center",

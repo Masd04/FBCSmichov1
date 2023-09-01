@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { florbalisti, letak, micek3, skola, v_gym, doppler, deti1, deti3 } from '../static';
+import { letak, micek3, deti1, deti3 } from '../static';
 import { Link } from 'react-router-dom';
 import styles from '../style';
 import Modal from 'react-modal';
@@ -22,19 +22,19 @@ function Home() {
     <div className={`${styles.marginX} sm:pt-5 flex-1 flex flex-wrap`}>
 
 
-      <div className="w-full h-auto md:h-32 mb-2 rounded-lg flex items-center bg-cover bg-center" style={{ backgroundImage: 'url(https://shop.wannadosports.com/wp-content/uploads/2018/06/meerfunBg.png)' }}>
+      <div className="w-full h-auto md:h-32 mb-2 rounded-lg flex items-center bg-auto bg-center" style={{ backgroundImage: 'url(https://www.wannadosports.com/wp-content/uploads/2018/06/nilaBg.png)' }}>
 
-        <div className="w-2/3 p-4 text-center font-nunito text-xs ss:text-lg sm:text-xl md:text-3xl lg:text-4xl pl-0">
-          <p className="text-white">
+        <div className="w-2/3 p-4 text-center font-nunito text-xs xs:text-sm ss:text-base sm:text-xl md:text-2xl lg:text-4xl pl-0">
+          <p className="text-white select-none">
             S náborem nám pomáhá WANNADO.
           </p>
-          <p className="text-white">
+          <p className="text-white select-none">
             Stánek můžete navštívit na jejich festivalu.
           </p>
         </div>
-        <div className="w-1/3 flex justify-start">
+        <div className="w-1/3 flex justify-start select-none">
           <a href="https://www.wannadosports.com/wannado/" target="_blank">
-          <img src="https://www.wannadosports.com/wp-content/uploads/2018/06/wannado-white-cropped.png" alt="Wannado" className="h-4 xs:h-6 sm:h-8 md:h-11 lg:h-16 xl:h-14 cursor-pointer scale-100 hover:scale-105" />
+          <img src="https://www.wannadosports.com/wp-content/uploads/2018/06/wannado-white-cropped.png" alt="Wannado" className="h-4 xs:h-6 ss:h-7 sm:h-8 md:h-11 lg:h-14 cursor-pointer scale-100 hover:scale-105" />
           </a>
         </div>
   
@@ -49,7 +49,7 @@ function Home() {
           <div className="flex items-center justify-center pt-1 sm:pt-0">
             <img src={micek3} alt="Icon_Floorball" className="h-9 mx-1" />
           </div>
-          <div className="px-1 sm:px-10 text-center">
+          <div className="px-1 sm:px-2 md:px-10 text-center">
             <p className={`${styles.paragraphHome} text-white my-5`}>
               Florbalový klub FBC Smíchov je zaměřený především na děti a mládež. Jdeme cestou sportovního prožitku, dobré nálady na tréninku i zápasu, kamarádské atmosféry a vytváříme celoroční sportovní program. Pro informace o našich trénincích a klubových příspěvcích klikněte{' '}
               <Link to="/treninky">
