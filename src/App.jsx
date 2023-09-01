@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import {Navbar, Footer, ScrollToTop} from './components';
+import {Navbar, Footer, ScrollToTop, MobBar} from './components';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Klub from './pages/Klub';
@@ -26,15 +26,17 @@ function App() {
     
     <div className="w-full overflow-hidden">
 
+      <MobBar />
+
     <div className={`bg-primary ${styles.padingX} ${styles.flexCenter}`}>
-      <div className={`text-white ${styles.boxWidth} fixed top-0 z-10`}>
+      <div className={`text-white ${styles.boxWidth} fixed top-9 sm:top-0 z-10`}>
         <Navbar />
       </div>
     </div>
 
 
       <div className={`${styles.flexStart} ${styles.paddingY}`}>
-        <div className={`${styles.paddingY} ${styles.boxWidth} mt-5`}>              
+        <div className={`${styles.paddingY} ${styles.boxWidth} mt-16 sm:mt-5`}>              
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/prihlaska" element={<Prihlaska />}/>

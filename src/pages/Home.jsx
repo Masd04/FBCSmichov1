@@ -22,7 +22,7 @@ function Home() {
     <div className={`${styles.marginX} sm:pt-5 flex-1 flex flex-wrap`}>
 
 
-      <div className="w-full h-auto md:h-32 mb-2 rounded-lg flex items-center bg-auto bg-center" style={{ backgroundImage: 'url(https://www.wannadosports.com/wp-content/uploads/2018/06/nilaBg.png)' }}>
+      <div className="w-full h-auto md:h-32 mb-2 rounded-lg flex items-center bg-cover sm:bg-auto bg-center" style={{ backgroundImage: 'url(https://www.wannadosports.com/wp-content/uploads/2018/06/nilaBg.png)' }}>
 
         <div className="w-2/3 p-4 text-center font-poppins font-semibold sm:font-nunito sm:font-normal text-xs xs:text-sm ss:text-base sm:text-xl md:text-2xl lg:text-4xl pl-0">
           <p className="text-white select-none">
