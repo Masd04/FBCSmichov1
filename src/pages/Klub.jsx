@@ -8,7 +8,7 @@ function Klub() {
     <div className={`${styles.marginX} flex-1 `}>
       
       <div className={`${styles.nadpisG}`}>
-        Informace o klubu
+        <h1>Informace o klubu</h1>
       </div>
 
       <div className="flex justify-center">
@@ -32,7 +32,7 @@ function Klub() {
           <p className={`${styles.paragraph} text-white text-center`}>Nábor probíhá pruběžně celý rok.</p>
         <p className={`${styles.paragraphKlub} text-white`}>
             <br />
-            Příspěvky: <br />
+            <h3>Příspěvky:</h3>
           <span className={`${styles.paragraph} text-white`}>250 Kč / měsíc</span><br />
           <span className={`${styles.paragraphPrisp}`}>( splatné dopředu )</span><br /><br />
           <span className={`${styles.paragraph} text-white`}>říjen - leden : 1000 Kč</span><br />

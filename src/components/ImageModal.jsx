@@ -17,7 +17,7 @@ function ImageModal({ isOpen, onRequestClose, selectedImage }) {
           &times;
         </button>
       </div>
-      <img src={selectedImage} alt="Selected" className="max-w-full max-h-full" />
+      <img src={selectedImage} alt="Selected Image" className="max-w-full max-h-full" />
     </Modal>
   );
 }

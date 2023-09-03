@@ -89,7 +89,7 @@ function Treninky() {
   return (
     <div className={`${styles.padingX} ${styles.flex}`}>
       <div className={`${styles.marginX} flex-1`}>
-        <div className={`${styles.nadpisY}`}>Tréninky</div>
+        <div className={`${styles.nadpisY}`}><h1>Tréninky</h1></div>
         <p className={`${styles.paragraphTreninky} text-white my-10 ss:mx-20 text-center`}>
           <span className={`${styles.spanBgTxt}`}>
           Základní škola Weberova, Weberova 1/1090, Praha 5 - Košíře, PSČ: 150 00
@@ -98,10 +98,10 @@ function Treninky() {
 
         <div className="flex justify-center mb-5">
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-    <img src={skola} alt="Image 1" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(skola)} />
-    <img src={bazen} alt="Image 2" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(bazen)} />
-    <img src={v_gym} alt="Image 3" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(v_gym)} />
-    <img src={venk_hriste} alt="Image 4" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(venk_hriste)} />
+    <img src={skola} alt="Fotka Školy - ZŠ Weberova" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(skola)} />
+    <img src={bazen} alt="Fotka bazénu - ZŠ Weberova" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(bazen)} />
+    <img src={v_gym} alt="Fotka tělocvičny - ZŠ Weberova" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(v_gym)} />
+    <img src={venk_hriste} alt="Fotka venkovního hřiště - ZŠ Weberova" className="sm:w-auto sm:h-64 object-cover border-2" onClick={() => handleImageClick(venk_hriste)} />
   </div>
 </div>
 
@@ -174,7 +174,7 @@ function Treninky() {
             &times;
           </button>
         </div>
-        {selectedImage && <img src={selectedImage} alt="Selected" className="max-w-full max-h-full" />}
+        {selectedImage && <img src={selectedImage} alt="Selected Image" className="max-w-full max-h-full" />}
       </Modal>
 
     </div>

@@ -35,7 +35,7 @@ function Prihlaska() {
       <div className={`${styles.marginX} flex-1 `}>
         
         <div className={`${styles.nadpisY}`}>
-          Přihláška do klubu
+          <h1>Přihláška do klubu</h1>
         </div>
         
         

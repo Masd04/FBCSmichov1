@@ -34,7 +34,7 @@ function Home() {
         </div>
         <div className="w-1/3 flex justify-start select-none">
           <a href="https://www.wannadosports.com/wannado/" target="_blank">
-          <img src="https://www.wannadosports.com/wp-content/uploads/2018/06/wannado-white-cropped.png" alt="Wannado" className="h-4 xs:h-6 ss:h-7 sm:h-8 md:h-11 lg:h-14 cursor-pointer scale-100 hover:scale-105" />
+          <img src="https://www.wannadosports.com/wp-content/uploads/2018/06/wannado-white-cropped.png" alt="Wannado logo" className="h-4 xs:h-6 ss:h-7 sm:h-8 md:h-11 lg:h-14 cursor-pointer scale-100 hover:scale-105" />
           </a>
         </div>
   
@@ -44,7 +44,7 @@ function Home() {
       <div className="w-full sm:w-1/2">
         <div className={`${styles.spanBgTxt} my-1 sm:mx-5 sm:pb-0`}>
           <div className={`${styles.nadpisHome} my-1`}>
-            Vítejte na našem novém webu!
+            <h1>Vítejte na našem novém webu!</h1>
           </div>
           <div className="flex items-center justify-center pt-1 sm:pt-0">
             <img src={micek3} alt="Icon_Floorball" className="h-9 mx-1" />
@@ -64,13 +64,13 @@ function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-0 my-1">
               <img
                 src={deti3}
-                alt="Image 1"
+                alt="Malí florbalisti se radují"
                 className="sm:w-auto object-cover border-4 border-white justify-self-center cursor-pointer"
                 onClick={() => handleImageClick(deti3)}
               />
               <img
                 src={deti1}
-                alt="Image 2"
+                alt="Malí florbalisti ve hře"
                 className="sm:w-[77%] object-cover border-4 border-white justify-self-center cursor-pointer"
                 onClick={() => handleImageClick(deti1)}
               />
@@ -82,7 +82,7 @@ function Home() {
       <div className="w-full sm:w-1/2 flex flex-col items-center">
         <div className="mt-8 mb-1 sm:my-1">
           <Link to="/treninky" className="block cursor-pointer">
-            <img src={letak} alt="letak" className="w-full mx-auto scale-100 hover:scale-105" />
+            <img src={letak} alt="FBC Smíchov náborový leták" className="w-full mx-auto scale-100 hover:scale-105" />
           </Link>
         </div>
         <div className="flex justify-center mt-2">
@@ -109,7 +109,7 @@ function Home() {
             &times;
           </button>
         </div>
-        {selectedImage && <img src={selectedImage} alt="Selected" className="max-w-full max-h-full" />}
+        {selectedImage && <img src={selectedImage} alt="Selected Image" className="max-w-full max-h-full" />}
       </Modal>
     </div>
   );

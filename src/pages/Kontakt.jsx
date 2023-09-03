@@ -8,13 +8,13 @@ function Kontakt() {
     <div className={`${styles.marginX} flex-1 `}>
 
     <div className={`${styles.nadpisG}`}>
-        Kontakt
+        <h1>Kontakt</h1>
       </div>
 
     <div className={`flex flex-col sm:flex-row flex-wrap w-full mb-8 items-center`}>
 
         <div className="w-full xs:w-1/2 ss:w-1/2 sm:w-1/3 lg:w-1/3 flex flex-col justify-center p-2">
-          <img src={logoBezNapis} alt="avatar" className="w-44 mx-auto" />
+          <img src={logoBezNapis} alt="Logo Hlava Kačera" className="w-44 mx-auto" />
 
           <span className={`${styles.spanBgTxt}`}>
           <h1 className={`${styles.footerH1} text-fbcgreen text-center font-medium`}>Předseda klubu</h1>
@@ -28,7 +28,7 @@ function Kontakt() {
         </div>
 
         <div className="w-full xs:w-1/2 ss:w-1/2 sm:w-1/3 lg:w-1/3 flex flex-col justify-center p-2">
-          <img src={logoBezNapis} alt="avatar" className="w-44 mx-auto" />
+          <img src={logoBezNapis} alt="Logo Hlava Kačera" className="w-44 mx-auto" />
 
           <span className={`${styles.spanBgTxt}`}>
           <h1 className={`${styles.footerH1} text-fbcyellow text-center font-medium`}>Sekretář klubu</h1>
@@ -41,7 +41,7 @@ function Kontakt() {
         </div>
 
         <div className="w-full xs:w-1/2 ss:w-1/2 sm:w-1/3 lg:w-1/3 flex flex-col justify-center p-2">
-          <img src={logoBezNapis} alt="avatar" className="w-44 mx-auto" />
+          <img src={logoBezNapis} alt="Logo Hlava Kačera" className="w-44 mx-auto" />
 
           <span className={`${styles.spanBgTxt}`}>
           <h1 className={`${styles.footerH1} text-fbcgreen text-center font-medium`}>Člen výboru klubu</h1>
