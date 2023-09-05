@@ -9,6 +9,7 @@ function Kontakt() {
     <Helmet>
       <title>Kontakt - FBC Smíchov</title>
       <meta name="description" content="Výpis kontaktů na vedení mládežnického forbalového klubu FBC Smíchov." />
+      <link rel="canonical" href="/kontakt" />
     </Helmet>
 
     <div className={`${styles.padingX} ${styles.flex}`}>

@@ -35,6 +35,7 @@ function Prihlaska() {
     <Helmet>
       <title>Přihláška - FBC Smíchov</title>
       <meta name="description" content="Stránka pro podání přihlášky do mládežnického florbalového klubu FBC Smíchov." />
+      <link rel="canonical" href="/prihlaska" />
     </Helmet>
     
     <div className={`${styles.padingX} ${styles.flex}`}>

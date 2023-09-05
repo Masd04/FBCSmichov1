@@ -24,6 +24,7 @@ function Home() {
     <Helmet>
       <title>Domovská stránka - FBC Smíchov</title>
       <meta name="description" content="Domovská stránka florbalového klubu FBC Smíchov. Florbalový klub FBC Smíchov je zaměřený především na děti a mládež." />
+      <link rel="canonical" href="/" />
     </Helmet>
     
     

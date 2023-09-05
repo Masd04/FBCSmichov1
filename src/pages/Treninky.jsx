@@ -92,6 +92,7 @@ function Treninky() {
     <Helmet>
       <title>Tréninky - FBC Smíchov</title>
       <meta name="description" content="Informace o časech a místech pravidelných tréninků, fotky sportovišť a mapy." />
+      <link rel="canonical" href="/treninky" />
     </Helmet>
 
 

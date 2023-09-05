@@ -9,6 +9,7 @@ function Klub() {
      <Helmet>
       <title>Informace o klubu - FBC Smíchov</title>
       <meta name="description" content="Informace o mládežnickém florbalovém klubu FBC Smíchov a výše placených příspěvků" />
+      <link rel="canonical" href="/klub" />
     </Helmet>
    
     <div className={`${styles.padingX} ${styles.flex}`}>
