@@ -1,9 +1,16 @@
 import React from 'react'
 import styles from '../style'
 import {logoBezNapis} from "../static"
+import { Helmet } from 'react-helmet-async'
 
 function Kontakt() {
   return (
+    <>
+    <Helmet>
+      <title>Kontakt - FBC Smíchov</title>
+      <meta name="description" content="Výpis kontaktů na vedení mládežnického forbalového klubu FBC Smíchov." />
+    </Helmet>
+
     <div className={`${styles.padingX} ${styles.flex}`}>
     <div className={`${styles.marginX} flex-1 `}>
 
@@ -66,6 +73,8 @@ function Kontakt() {
 		<div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient pointer-events-none"></div>
 
   </div>
+
+  </>
   )
 }
 

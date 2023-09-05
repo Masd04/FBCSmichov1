@@ -9,6 +9,7 @@ import {Link} from 'react-router-dom';
 import { bazen, skola, v_gym, venk_hriste } from "../static";
 import Modal from 'react-modal';
 import '../static/css/modal.css';
+import { Helmet } from 'react-helmet-async'
 
 function Treninky() {
   // Modal Popup
@@ -87,6 +88,13 @@ function Treninky() {
   }, []);
 
   return (
+    <>
+    <Helmet>
+      <title>Tréninky - FBC Smíchov</title>
+      <meta name="description" content="Informace o časech a místech pravidelných tréninků, fotky sportovišť a mapy." />
+    </Helmet>
+
+
     <div className={`${styles.padingX} ${styles.flex}`}>
       <div className={`${styles.marginX} flex-1`}>
         <div className={`${styles.nadpisY}`}><h1>Tréninky</h1></div>
@@ -178,6 +186,8 @@ function Treninky() {
       </Modal>
 
     </div>
+
+    </>
   );
 }
 

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import styles from '../style';
 import Modal from 'react-modal';
 import '../static/css/modal.css';
+import { Helmet } from 'react-helmet-async'
 
 Modal.setAppElement('#root');
 
@@ -19,6 +20,13 @@ function Home() {
   };
 
   return (
+    <>
+    <Helmet>
+      <title>Domovská stránka - FBC Smíchov</title>
+      <meta name="description" content="Domovská stránka florbalového klubu FBC Smíchov. Florbalový klub FBC Smíchov je zaměřený především na děti a mládež." />
+    </Helmet>
+    
+    
     <div className={`${styles.marginX} sm:pt-5 flex-1 flex flex-wrap`}>
 
 
@@ -112,6 +120,8 @@ function Home() {
         {selectedImage && <img src={selectedImage} alt="Selected Image" className="max-w-full max-h-full" />}
       </Modal>
     </div>
+
+    </>
   );
 }
 

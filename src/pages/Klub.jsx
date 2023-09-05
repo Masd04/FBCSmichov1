@@ -1,8 +1,16 @@
 import React from 'react'
 import styles from '../style'
+import { Helmet } from 'react-helmet-async'
 
 function Klub() {
   return (
+    <>
+
+     <Helmet>
+      <title>Informace o klubu - FBC Smíchov</title>
+      <meta name="description" content="Informace o mládežnickém florbalovém klubu FBC Smíchov a výše placených příspěvků" />
+    </Helmet>
+   
     <div className={`${styles.padingX} ${styles.flex}`}>
 
     <div className={`${styles.marginX} flex-1 `}>
@@ -33,10 +41,10 @@ function Klub() {
         <p className={`${styles.paragraphKlub} text-white`}>
             <br />
             <h3>Příspěvky:</h3>
-          <span className={`${styles.paragraph} text-white`}>250 Kč / měsíc</span><br />
+          <span className={`${styles.paragraph} text-white`}>500 Kč / měsíc</span><br />
           <span className={`${styles.paragraphPrisp}`}>( splatné dopředu )</span><br /><br />
-          <span className={`${styles.paragraph} text-white`}>říjen - leden : 1000 Kč</span><br />
-          <span className={`${styles.paragraph} text-white`}>únor - červen : 1250 Kč</span>
+          <span className={`${styles.paragraph} text-white`}>říjen - leden : 2000 Kč</span><br />
+          <span className={`${styles.paragraph} text-white`}>únor - červen : 2500 Kč</span>
         </p>
         </div>
 
@@ -57,6 +65,8 @@ function Klub() {
     <div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient pointer-events-none"></div>
 
   </div>
+  
+  </>
   )
 }
 

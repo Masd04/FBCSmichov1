@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import styles from '../style'
 import emailjs from '@emailjs/browser';
+import { Helmet } from 'react-helmet-async'
 
 
 function Prihlaska() {
@@ -30,6 +31,12 @@ function Prihlaska() {
 
 
   return (
+    <>
+    <Helmet>
+      <title>Přihláška - FBC Smíchov</title>
+      <meta name="description" content="Stránka pro podání přihlášky do mládežnického florbalového klubu FBC Smíchov." />
+    </Helmet>
+    
     <div className={`${styles.padingX} ${styles.flex}`}>
 
       <div className={`${styles.marginX} flex-1 `}>
@@ -142,6 +149,8 @@ function Prihlaska() {
 		<div className="absolute z-[0] w-[40%] h-[35%] top-[150px] right-[470px] white__gradient pointer-events-none"></div>
 
     </div>
+
+    </>
   )
 }
 
