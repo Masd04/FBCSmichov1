@@ -74,7 +74,7 @@ const Navbar = () => {
 
     </div>
 
-    <nav ref={navRef} className="sm:relative flex w-full py-3 sm:py-6 navbar top-0 sm:mt-[3.1rem] ml-[0.23rem] sm:ml-[0.15rem] bg-primary rounded-2xl sm:rounded-3xl select-none">
+    <nav ref={navRef} className="sm:relative flex w-[101%] sm:w-full py-3 sm:py-6 navbar top-0 sm:mt-[3.1rem] ml-0 sm:ml-[0.15rem] bg-primary rounded-2xl sm:rounded-3xl select-none">
       <a href="/">
         <div className="hidden sm:flex md:flex lg:flex xl:flex w-[12%] xs:ml-5 ss:ml-5 sm:ml-5 md:ml-10 xl:mt-6 lg:mt-3 md:mt-7 sm:mt-7 object-contain cursor-pointer scale-100 hover:scale-110 absolute top-[-50%] left-1 transform[-translate-x-1/2] self-stretch">
           <img src={logoBezNapis} alt="Logo Hlava Kačera" className="h-[200%]" />
