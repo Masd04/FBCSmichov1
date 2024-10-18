@@ -27,8 +27,8 @@ function Kontakt() {
           <span className={`${styles.spanBgTxt}`}>
           <h1 className={`${styles.footerH1} text-fbcgreen text-center font-medium`}>Předseda klubu</h1>
           <p className={`${styles.paragraph} text-white text-center font-medium`}>
-            Jiří Irlbek<br />
-            +420 775 558 518<br />
+            Jane Doe<br />
+            +420 000 000 000<br />
             irlbek@fbcsmichov.cz<br />
           </p>
           </span>
@@ -54,9 +54,9 @@ function Kontakt() {
           <span className={`${styles.spanBgTxt}`}>
           <h1 className={`${styles.footerH1} text-fbcgreen text-center font-medium`}>Člen výboru klubu</h1>
           <p className={`${styles.paragraph} text-white text-center font-medium`}>
-            Viktor Martínek <br />
-            +420 602 724 543 <br />
-            martinek@fbcsmichov.cz <br />
+            Some contact <br />
+            +420 000 000 000 <br />
+           templatemail@fbcsmichov.cz <br />
           </p>
           </span>
         </div>
