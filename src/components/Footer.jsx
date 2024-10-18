@@ -25,17 +25,17 @@ const Footer = () => {
         <div className="w-full xs:w-1/2 ss:w-1/2 sm:w-1/2 lg:w-1/4 flex flex-col justify-start p-2">
           <h1 className={`${styles.footerH1} text-white font-medium ml-5`}>Kontakty:</h1>
           <p className={`${styles.paragraph} text-white font-medium ml-5`}>
-            Jiří Irlbek <br />
-            +420 775 558 518 <br />
-            irlbek@fbcsmichov.cz <br />
+            Jan Novák <br />
+            +420 000 000 000 <br />
+            somemail@fbcsmichov.cz <br />
           </p>
         </div>
         <div className="w-full xs:w-1/2 ss:w-1/2 sm:w-1/2 lg:w-1/4 flex flex-col justify-start p-2 mt-8">
           <h1 className={`${styles.footerH1} text-white font-medium ml-5`}></h1>
           <p className={`${styles.paragraph} text-white font-medium ml-5`}>
-            Viktor Martínek <br />
-            +420 602 724 543 <br />
-            vi.ma2525@gmail.com <br />
+            John Doe <br />
+            +420 000 000 000 <br />
+            somemail@gmail.com <br />
           </p>
         </div>
         <div className="w-full xs:w-1/2 ss:w-1/2 sm:w-1/2 lg:w-1/4 flex flex-col justify-start p-2">
